@@ -28,7 +28,8 @@ int main()
 {
     //Reference Type
 
-  /*  int arr1[] = {1,2,3,4};
+  /* 
+   int arr1[] = {1,2,3,4}; //arr1 stored in heap and took an address "&arr1[0]" and we link the stack with the via pointer which have a memory location of array in the heap.
     int *arr2=arr1; // arr2 contains the same arr1 reference in the memory.therefore when you modify arr1 ,arr2 will effects and vice versa.
 
     short Length=sizeof(arr1)/sizeof(arr1[0]);
@@ -63,13 +64,16 @@ int main()
     cout<<"--------------------------\n";*/
 
 
-    //Value Type
+    //Value Type -> Stored In Stack
 
     int Number=50;
     cout<<"Number Before Duplication: "<<Number<<endl;//50
 
     DuplicateNumber(Number);
     cout<<"Number After Duplication: "<<Number<<endl;//50
+
+
+    int num2=num1; //here num2 go and store in another store in stack ,not the same store as what happen in reference type.  
 
     return 0;
 }
